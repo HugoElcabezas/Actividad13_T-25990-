@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     if (Title.value !== '' && text !== '') {
       //console.log(Title.value);
       //console.log(text);
-      this.notes.push([Title.value,text]);
+      this.notes.unshift([Title.value,text]);
     } else {
       alert('Please add a title and a content for your new note.');
     }
