@@ -20,16 +20,13 @@ export class AppComponent implements OnInit {
     var text = (<HTMLInputElement>document.getElementById('textarea1')).value;
 
     if (Title.value !== '' && text !== '') {
-      //console.log(Title.value);
-      //console.log(text);
       this.notes.unshift([Title.value,text]);
     } else {
       alert('Please add a title and a content for your new note.');
     }
-    Title.value = '';
-    Content = ''
-    $('textarea#textarea1').val('');
-
+    Title.value = null;
+    $('textarea#textarea1').val(null);
+    M.textareaAutoResize($('#textarea1'));
   }
 
 }
