@@ -17,8 +17,10 @@ export class AppComponent implements OnInit {
     $('.collapsible').collapsible();
   }
 
-  addNote() {
-
+  addNote(Title: HTMLInputElement, Content) {
+    console.log(Title.value);
+    const text = document.getElementById('textarea1').value;
+    console.log(text);
   }
 
 }
