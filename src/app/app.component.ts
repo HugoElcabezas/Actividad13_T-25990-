@@ -19,8 +19,15 @@ export class AppComponent implements OnInit {
 
   addNote(Title: HTMLInputElement, Content) {
     console.log(Title.value);
-    const text = document.getElementById('textarea1').value;
+    //const text = document.getElementById('textarea1').value;
+    var text = (<HTMLInputElement>document.getElementById('textarea1')).value;
     console.log(text);
+
+    if (Title.value !== '') {
+      console.log(Title.value);
+      console.log(text);
+    }
+
   }
 
 }
