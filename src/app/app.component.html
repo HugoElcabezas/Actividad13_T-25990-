@@ -1,42 +1,70 @@
+<!--Arriba-->
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo center">Notes</a>
-    <!--
-    <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">JavaScript</a></li>
-    </ul>
-    -->
-  </div>
+  <a href="#" class="brand-logo center">Notes</a>
+</div>
+
 </nav>
 
-<h2>Add a New Note</h2>
+<!--Container-->
+<div class="container">
 
-<!--Title-->
-<div class="row">
-  <form class="col s12">
-    <div class="row">
-      <div class="input-field col s16">
-        <input id="Title" type="text">
-        <label for="Title">Title</label>
-      </div>
+  <!--"Add a New Note"-->
+  <div class="row">
+    <div class="col s12">
+      <h2>Add a New Note</h2>
     </div>
-  </form>
-</div>
+  </div>
 
-<!--Content-->
-<div class="row">
-  <form class="col s6">
-    <div class="row">
-      <div class="input-field col s12">
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
-        <label for="textarea1">Content</label>
+  <!--Title-->
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s16">
+          <input id="Title" type="text">
+          <label for="Title">Title</label>
+        </div>
       </div>
+    </form>
+  </div>
+
+  <!--Content-->
+  <div class="row">
+    <form class="col s6">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Content</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--Botón-->
+  <div class = "row">
+    <div class = "col s12">
+      <a class="waves-effect waves-light btn-large">CREATE NOTE</a>
     </div>
-  </form>
+  </div>
+
+  <!--"Your Notes"-->
+  <div class = "row">
+    <div class = "col s12">
+      <h2>Your Notes</h2>
+    </div>
+  </div>
+
+  <!--"Nota de Prueba"-->
+  <div class = "row">
+    <div class = "col s12">
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header">Nota de prueba</div>
+          <div class="collapsible-body"><span>Funciona muy bien...</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Final del Container-->
 </div>
-
-<a class="waves-effect waves-light btn-large">CREATE NOTE</a>
-
-<h2>Your Notes</h2>
