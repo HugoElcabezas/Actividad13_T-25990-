@@ -9,24 +9,24 @@ declare let $: any;
 })
 export class AppComponent implements OnInit {
 
-  notes = [
-    ['notaPrueba', 'bien']
-  ];
+  notes = [];
 
   ngOnInit() {
     $('.collapsible').collapsible();
   }
 
   addNote(Title: HTMLInputElement, Content) {
-    console.log(Title.value);
-    //const text = document.getElementById('textarea1').value;
-    var text = (<HTMLInputElement>document.getElementById('textarea1')).value;
-    console.log(text);
 
-    if (Title.value !== '') {
-      console.log(Title.value);
-      console.log(text);
+    var text = (<HTMLInputElement>document.getElementById('textarea1')).value;
+
+    if (Title.value !== '' && text !== '') {
+      //console.log(Title.value);
+      //console.log(text);
+      this.notes.push([Title.value,text]);
+    } else {
+      alert('Please add a title and a content for your new note.');
     }
+    Title.value = '';
 
   }
 
