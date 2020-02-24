@@ -27,6 +27,8 @@ export class AppComponent implements OnInit {
       alert('Please add a title and a content for your new note.');
     }
     Title.value = '';
+    Content = ''
+    $('textarea#textarea1').val('');
 
   }
 
