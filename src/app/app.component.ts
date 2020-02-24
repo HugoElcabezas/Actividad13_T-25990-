@@ -9,7 +9,16 @@ declare let $: any;
 })
 export class AppComponent implements OnInit {
 
+  notes = [
+    ['notaPrueba', 'bien']
+  ];
+
   ngOnInit() {
     $('.collapsible').collapsible();
   }
+
+  addNote() {
+
+  }
+
 }

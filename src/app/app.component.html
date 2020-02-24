@@ -58,9 +58,9 @@
   <div class = "row">
     <div class = "col s12">
       <ul class="collapsible">
-        <li>
-          <div class="collapsible-header">Nota de prueba</div>
-          <div class="collapsible-body"><span>Funciona muy bien...</span></div>
+        <li *ngFor="let note of notes">
+          <div class="collapsible-header">{{note[0]}}</div>
+          <div class="collapsible-body">{{note[1]}}<span></span></div>
         </li>
       </ul>
     </div>
